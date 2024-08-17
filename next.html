@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>GF day</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url("Background.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      margin: 0;
+      }      
+.image {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: static;
+  border-radius: 10%;
+}
+.gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 70px;
+  animation-delay: 5ms;
+}
+.gif1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 70px;
+  animation-delay: 5ms;
+
+}
+.image:hover{
+  opacity: 1.0;
+  transform: scale(1.05);
+}
+.container{
+  position: static;
+  width: 50%;
+  right: 50px;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text { 
+  color: white;
+  font-size: 32px;
+  padding: 16px 32px;
+  font-style: italic;
+}
+.next-button1 {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 18px;
+        color: #fff;
+        background: linear-gradient(45deg, #ff0066, #ff66cc);
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+        box-shadow: 0px 5px 15px rgba(255, 0, 102, 0.4);
+}
+      .next-button1:hover {
+        background: linear-gradient(45deg, #ff66cc, #ff0066);
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(255, 0, 102, 0.6);
+}
+    </style>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="blue edited.m4a" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+	  </div>
+    <img src="cute.gif" alt="cute" class="gif1" style=" width: 200px; height: 200px">
+    <img src="pusheen-guitar.gif" alt="pusheen-guitar" class="gif" style="width:200px;height:200px;">
+    <div class="container">
+      <img src="My-Girl.jpg" alt="Avatar" class="image" style="width: 100%;">
+      <div class="middle">
+        <div class="text">"LIFE IS TOO SHORT TO LOVE YOU IN ONE LIFETIME, I PROMISE TO LOOK FOR
+          YOU IN ANOTHER"</div>
+        <a href="next1.html" class="next-button1">Click Me!</a>
+      </div>
+	  </div>
+  </body>
+    
+</html>
